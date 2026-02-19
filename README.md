@@ -1,5 +1,11 @@
 # AI Hedge Fund
 
+> **⚠️ EDUCATIONAL SIMULATION ONLY ⚠️**  
+> This system **DOES NOT execute real trades**. It is a **proof of concept** for exploring AI-powered trading decisions.  
+> **NOT FOR REAL TRADING OR INVESTMENT.** See [full disclaimer](#disclaimer) below.
+
+📚 **[Read Project Status & Capabilities](PROJECT_STATUS.md)** - Important information about what this system can and cannot do.
+
 This is a proof of concept for an AI-powered hedge fund.  The goal of this project is to explore the use of AI to make trading decisions.  This project is for **educational** purposes only and is not intended for real trading or investment.
 
 This system employs several agents working together:
@@ -30,23 +36,47 @@ This system employs several agents working together:
 
 ## Disclaimer
 
+**⚠️ IMPORTANT - READ CAREFULLY ⚠️**
+
 This project is for **educational and research purposes only**.
 
-- Not intended for real trading or investment
+### What This System IS:
+✅ A **simulation** of AI-powered trading decisions  
+✅ An educational tool for learning about algorithmic trading  
+✅ A demonstration of multi-agent AI systems  
+✅ A backtesting and analysis platform  
+
+### What This System IS NOT:
+❌ **NOT a real trading system** - it does not execute actual trades  
+❌ **NOT financial advice** - do not make investment decisions based on this  
+❌ **NOT a money-making tool** - it cannot guarantee any profits  
+❌ **NOT for cryptocurrency** - focuses on stock market analysis  
+❌ **NOT for leverage trading** - does not support leveraged positions  
+
+### Legal & Financial Warnings:
 - No warranties or guarantees provided
 - Past performance does not indicate future results
 - Creator assumes no liability for financial losses
-- Consult a financial advisor for investment decisions
+- Trading involves substantial risk of loss
+- Consult a licensed financial advisor for investment decisions
+- Never invest more than you can afford to lose
 
-By using this software, you agree to use it solely for learning purposes.
+**By using this software, you agree to use it solely for learning purposes.**
+
+If you're looking for real trading systems, this is NOT it. This is a learning tool only.
+
+---
 
 ## Table of Contents
+- [Disclaimer](#disclaimer)
+- [Demo](#demo)
 - [Setup](#setup)
   - [Using Poetry](#using-poetry)
   - [Using Docker](#using-docker)
 - [Usage](#usage)
   - [Running the Hedge Fund](#running-the-hedge-fund)
   - [Running the Backtester](#running-the-backtester)
+- [Deployment](#deployment)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [Feature Requests](#feature-requests)
@@ -230,6 +260,27 @@ poetry run python src/backtester.py --ticker AAPL,MSFT,NVDA --ollama
 # With Docker (on Windows):
 run.bat --ticker AAPL,MSFT,NVDA --ollama backtest
 ```
+
+
+## Deployment
+
+### GitHub Pages Demo
+
+This repository includes automated deployment to GitHub Pages for the frontend demo application.
+
+**Live Demo:** Once deployed, the demo will be available at `https://[your-username].github.io/ai-hedge-fund/`
+
+#### Setup GitHub Pages Deployment:
+
+1. Go to your repository **Settings** → **Pages**
+2. Under "Build and deployment", set Source to **GitHub Actions**
+3. Push to the `main` branch or manually trigger the workflow from the **Actions** tab
+
+The workflow will automatically build and deploy the frontend to GitHub Pages.
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+**Note:** The demo frontend is a visualization tool only. It does not execute real trades and requires a backend API to be running for full functionality.
 
 
 ## Project Structure 
