@@ -4,6 +4,8 @@
 > This system **DOES NOT execute real trades**. It is a **proof of concept** for exploring AI-powered trading decisions.  
 > **NOT FOR REAL TRADING OR INVESTMENT.** See [full disclaimer](#disclaimer) below.
 
+📚 **[Read Project Status & Capabilities](PROJECT_STATUS.md)** - Important information about what this system can and cannot do.
+
 This is a proof of concept for an AI-powered hedge fund.  The goal of this project is to explore the use of AI to make trading decisions.  This project is for **educational** purposes only and is not intended for real trading or investment.
 
 This system employs several agents working together:
